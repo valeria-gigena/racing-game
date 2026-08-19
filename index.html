@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racing Game</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a0a0a;
+        overflow: hidden;
+      }
+      #app {
+        width: 100vw;
+        height: 100vh;
+      }
+      canvas {
+        display: block;
+      }
+      #debug-hud {
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        color: #e0e0e0;
+        font-family: system-ui, sans-serif;
+        font-size: 13px;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 6px 10px;
+        border-radius: 4px;
+        pointer-events: none;
+        line-height: 1.4;
+      }
+      #race-hud {
+        position: fixed;
+        top: 52px;
+        left: 8px;
+        color: #ffe9a8;
+        font-family: system-ui, sans-serif;
+        font-size: 13px;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 6px 10px;
+        border-radius: 4px;
+        pointer-events: none;
+        line-height: 1.4;
+      }
+      /* Indicador de derrape/turbo placeholder -- reemplazar por el HUD
+         real (con sprites/efectos) en la Fase 8. Por ahora solo da
+         feedback funcional de que el sistema de carga funciona. */
+      #drift-meter {
+        position: fixed;
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 6px;
+        pointer-events: none;
+      }
+      .drift-pip {
+        width: 34px;
+        height: 8px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        transition: background 0.1s ease;
+      }
+      .drift-pip.tier-1 { background: #3fa9f5; border-color: #3fa9f5; }
+      .drift-pip.tier-2 { background: #ff9a3f; border-color: #ff9a3f; }
+      .drift-pip.tier-3 { background: #c15bff; border-color: #c15bff; }
+      #turbo-flash {
+        position: fixed;
+        bottom: 46px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffd23f;
+        font-family: system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-shadow: 0 0 8px rgba(255, 210, 63, 0.8);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s ease;
+      }
+      #turbo-flash.show { opacity: 1; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="debug-hud">Fase 5 &mdash; IA por waypoints &middot; WASD/flechas mover &middot; Espacio freno de mano &middot; Shift derrape &middot; C c&aacute;mara libre</div>
+    <div id="race-hud"></div>
+    <div id="drift-meter">
+      <div class="drift-pip" data-tier="1"></div>
+      <div class="drift-pip" data-tier="2"></div>
+      <div class="drift-pip" data-tier="3"></div>
+    </div>
+    <div id="turbo-flash">&iexcl;TURBO!</div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

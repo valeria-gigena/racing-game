@@ -1,0 +1,164 @@
+[
+  {
+    "id": "monza",
+    "name": "Autódromo de Monza",
+    "inspiredBy": "Autodromo Nazionale di Monza (Italia)",
+    "environment": "classic_day",
+    "difficulty": "easy",
+    "recommendedLaps": 5,
+    "width": 15,
+    "generator": { "numPoints": 22, "radiusX": 58, "radiusZ": 32, "variation": 0.06, "seed": 101 }
+  },
+  {
+    "id": "silverstone",
+    "name": "Circuito de Silverstone",
+    "inspiredBy": "Silverstone Circuit (Reino Unido)",
+    "environment": "classic_overcast",
+    "difficulty": "medium",
+    "recommendedLaps": 5,
+    "width": 14,
+    "generator": { "numPoints": 26, "radiusX": 46, "radiusZ": 38, "variation": 0.22, "seed": 202 }
+  },
+  {
+    "id": "monaco",
+    "name": "Circuito de Mónaco",
+    "inspiredBy": "Circuit de Monaco",
+    "environment": "urban_dusk",
+    "difficulty": "hard",
+    "recommendedLaps": 15,
+    "width": 9,
+    "generator": { "numPoints": 30, "radiusX": 28, "radiusZ": 20, "variation": 0.35, "seed": 303 }
+  },
+  {
+    "id": "nurburgring",
+    "name": "Nürburgring Nordschleife",
+    "inspiredBy": "Nürburgring Nordschleife (Alemania)",
+    "environment": "forest_day",
+    "difficulty": "hard",
+    "recommendedLaps": 5,
+    "width": 12,
+    "generator": { "numPoints": 34, "radiusX": 70, "radiusZ": 44, "variation": 0.3, "seed": 404 },
+    "surfaceZones": [
+      { "from": 0.18, "to": 0.26, "surface": "gravel" },
+      { "from": 0.62, "to": 0.68, "surface": "gravel" }
+    ]
+  },
+  {
+    "id": "spa",
+    "name": "Circuito de Spa-Francorchamps",
+    "inspiredBy": "Circuit de Spa-Francorchamps (Bélgica)",
+    "environment": "classic_dusk",
+    "difficulty": "medium",
+    "recommendedLaps": 10,
+    "width": 13,
+    "generator": { "numPoints": 28, "radiusX": 50, "radiusZ": 36, "variation": 0.2, "seed": 505 }
+  },
+  {
+    "id": "interlagos",
+    "name": "Autódromo de Interlagos",
+    "inspiredBy": "Autódromo José Carlos Pace, Interlagos (Brasil)",
+    "environment": "classic_day",
+    "difficulty": "medium",
+    "recommendedLaps": 10,
+    "width": 13,
+    "generator": { "numPoints": 24, "radiusX": 42, "radiusZ": 30, "variation": 0.24, "seed": 606 }
+  },
+  {
+    "id": "orbita-cero",
+    "name": "Órbita Cero",
+    "inspiredBy": null,
+    "environment": "space",
+    "difficulty": "hard",
+    "recommendedLaps": 5,
+    "width": 14,
+    "generator": { "numPoints": 26, "radiusX": 60, "radiusZ": 45, "variation": 0.15, "seed": 707 },
+    "surfaceZones": [{ "from": 0.45, "to": 0.55, "surface": "gravel" }]
+  },
+  {
+    "id": "costa-turquesa",
+    "name": "Costa Turquesa",
+    "inspiredBy": null,
+    "environment": "beach",
+    "difficulty": "easy",
+    "recommendedLaps": 10,
+    "width": 15,
+    "generator": { "numPoints": 22, "radiusX": 48, "radiusZ": 34, "variation": 0.12, "seed": 808 }
+  },
+  {
+    "id": "crater-lunar",
+    "name": "Cráter Lunar",
+    "inspiredBy": null,
+    "environment": "moon",
+    "difficulty": "medium",
+    "recommendedLaps": 5,
+    "width": 13,
+    "generator": { "numPoints": 24, "radiusX": 40, "radiusZ": 40, "variation": 0.28, "seed": 909 },
+    "surfaceZones": [
+      { "from": 0.1, "to": 0.2, "surface": "gravel" },
+      { "from": 0.5, "to": 0.6, "surface": "gravel" },
+      { "from": 0.8, "to": 0.88, "surface": "gravel" }
+    ]
+  },
+  {
+    "id": "selva-esmeralda",
+    "name": "Selva Esmeralda",
+    "inspiredBy": null,
+    "environment": "jungle",
+    "difficulty": "hard",
+    "recommendedLaps": 10,
+    "width": 10,
+    "generator": { "numPoints": 32, "radiusX": 36, "radiusZ": 26, "variation": 0.38, "seed": 111 }
+  },
+  {
+    "id": "cumbre-nevada",
+    "name": "Cumbre Nevada",
+    "inspiredBy": null,
+    "environment": "snow",
+    "difficulty": "hard",
+    "recommendedLaps": 10,
+    "width": 12,
+    "generator": { "numPoints": 28, "radiusX": 44, "radiusZ": 32, "variation": 0.26, "seed": 222 },
+    "surfaceZones": [{ "from": 0.3, "to": 0.42, "surface": "ice" }]
+  },
+  {
+    "id": "dunas-ardientes",
+    "name": "Dunas Ardientes",
+    "inspiredBy": null,
+    "environment": "desert",
+    "difficulty": "medium",
+    "recommendedLaps": 5,
+    "width": 16,
+    "generator": { "numPoints": 20, "radiusX": 62, "radiusZ": 38, "variation": 0.1, "seed": 333 }
+  },
+  {
+    "id": "neon-metropolis",
+    "name": "Neón Metrópolis",
+    "inspiredBy": null,
+    "environment": "neon_city",
+    "difficulty": "medium",
+    "recommendedLaps": 10,
+    "width": 11,
+    "generator": { "numPoints": 30, "radiusX": 38, "radiusZ": 30, "variation": 0.3, "seed": 444 }
+  },
+  {
+    "id": "caldera-ignea",
+    "name": "Caldera Ígnea",
+    "inspiredBy": null,
+    "environment": "volcano",
+    "difficulty": "hard",
+    "recommendedLaps": 5,
+    "width": 12,
+    "generator": { "numPoints": 26, "radiusX": 45, "radiusZ": 33, "variation": 0.32, "seed": 555 },
+    "surfaceZones": [{ "from": 0.65, "to": 0.75, "surface": "gravel" }]
+  },
+  {
+    "id": "arrecife-azul",
+    "name": "Arrecife Azul",
+    "inspiredBy": null,
+    "environment": "reef",
+    "difficulty": "easy",
+    "recommendedLaps": 15,
+    "width": 15,
+    "generator": { "numPoints": 20, "radiusX": 34, "radiusZ": 26, "variation": 0.1, "seed": 666 }
+  }
+]

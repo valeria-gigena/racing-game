@@ -91,8 +91,6 @@ racing-game/
 └── docs/ASSETS_SOURCES.md  # de dónde sacar assets reales y su licencia
 ```
 
-## Stack
-
 - **Renderizado**: Three.js
 - **Física**: `@dimforge/rapier3d-compat` (raycast vehicle controller)
 - **Build**: Vite
